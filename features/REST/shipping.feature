@@ -10,7 +10,7 @@ Feature: Scenarios related to shipping colection REST API in Coordinadora Inform
             And user should be able to see isError equals false in the response       
         Examples:
             | direccion | numero | fechaRecogida | nombreEntrega  | apellidosEntrega | celularEntrega    | emailUsuario     | descripcionTipoVia | aplicativo | isError |
-            | 07       | 87     | 2024-11-02    | Southern        | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     | false   |
+            | 08       | 87     | 2024-11-02    | Southern        | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     | false   |
 
 
 
