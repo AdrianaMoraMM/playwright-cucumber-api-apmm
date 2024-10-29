@@ -10,7 +10,7 @@ Feature: Scenarios related to shipping colection REST API in Coordinadora Inform
             And user should be able to see isError equals false in the response       
         Examples:
             | direccion | numero | fechaRecogida | nombreEntrega  | apellidosEntrega | celularEntrega    | emailUsuario     | descripcionTipoVia | aplicativo | isError |
-            | 08       | 87     | 2024-11-02    | Southern        | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     | false   |
+            | 10      | 87     | 2024-11-02    | Southern        | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     | false   |
 
 
 
@@ -37,13 +37,13 @@ Feature: Scenarios related to shipping colection REST API in Coordinadora Inform
             
            
     @regression  @shipping @before3pm
-    Scenario: User makes a  request in holiday
+    Scenario: User makes a  request before3pm
         Given  the user sends a post request to Coordinadora Information System using "<direccion>","<numero>","<fechaRecogida>","<nombreEntrega>", "<apellidosEntrega>", "<celularEntrega>", "<emailUsuario>", "<descripcionTipoVia>","<aplicativo>"
         Then user should get a response with status code 200
             And user should be able to see isError equals true in the response and message before 3pm   
         Examples:
             | direccion | numero   | fechaRecogida | nombreEntrega  | apellidosEntrega | celularEntrega    | emailUsuario     | descripcionTipoVia | aplicativo |
-            |   660     |    09    | 2024-10-27    | Southern       |  Gothic          |  3125306919       | sg@gmail.es      | sin descripcion    | envios     | 
+            |   660     |    09    | 2024-10-28    | Southern       |  Gothic          |  3125306919       | sg@gmail.es      | sin descripcion    | envios     | 
 
 
     @regression  @shipping  @characteres
