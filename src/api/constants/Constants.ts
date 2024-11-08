@@ -10,7 +10,7 @@ export default class Constants{
     static readonly MESSAGE_DIR_JSON_PATH = "$.message";
     static readonly MESSAGE_DUP_JSON_PATH = "$.data.message";
     static readonly MESSAGE_DIR_RECEIVE="Los valores de entrada no son correctos.";
-    static readonly MESSAGE_DUP_RECEIVE="Error, Ya existe una recogida programada para hoy, id: 26780669";
+    static readonly MESSAGE_DUP_RECEIVE="Error, Ya existe una recogida programada para hoy, id: 26783880";
     static readonly MESSAGE_RECEIVE="Solicitud recogida programada exitosamente";
     static readonly MESSAGE_BEF3_RECEIVE="La solicitud no puede ser recogida el dia de hoy";
     static readonly MESSAGE_DIR_CHARAC_RECEIVE="Invalid XML";

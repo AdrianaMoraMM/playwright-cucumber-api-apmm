@@ -10,7 +10,7 @@ Feature: Scenarios related to shipping colection REST API in Coordinadora Inform
             And user should be able to see isError equals false in the response       
         Examples:
             | direccion | numero | fechaRecogida | nombreEntrega  | apellidosEntrega | celularEntrega    | emailUsuario     | descripcionTipoVia | aplicativo | isError |
-            | 11      | 87     | 2024-11-02    | Southern        | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     | false   |
+            | 114      | 87     | 2024-11-08    | Southern        | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     | false   |
 
 
 
@@ -21,10 +21,10 @@ Feature: Scenarios related to shipping colection REST API in Coordinadora Inform
             And user should be able to see isError equals true in the response         
         Examples:
             | direccion | numero | fechaRecogida | nombreEntrega  | apellidosEntrega | celularEntrega    | emailUsuario     | descripcionTipoVia | aplicativo |
-            |           | 87     | 2024-11-02    | Southern       | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |
-            |    88     | 87     | 2024-11-02    |                | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |
+            |           | 87     | 2024-11-08    | Southern       | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |
+            |    88     | 87     | 2024-11-08    |                | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |
             |    86     | 87     |               | Southern       | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |
-            |    87     | 09     | 2024-11-02    | Southern       |                  |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |  
+            |    87     | 09     | 2024-11-08    | Southern       |                  |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |  
 
     @regression  @shipping @duplicate
     Scenario: User makes a duplicate request
@@ -33,7 +33,7 @@ Feature: Scenarios related to shipping colection REST API in Coordinadora Inform
             And user should be able to see isError equals true in the response and message duplicate   
         Examples:
             | direccion | numero   | fechaRecogida | nombreEntrega  | apellidosEntrega | celularEntrega    | emailUsuario     | descripcionTipoVia | aplicativo |
-            |   660     |    09    | 2024-11-02    | Southern       |  Gothic          |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |  
+            |   660     |    09    | 2024-11-08    | Southern       |  Gothic          |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |  
             
            
     @regression  @shipping @before3pm
@@ -43,7 +43,7 @@ Feature: Scenarios related to shipping colection REST API in Coordinadora Inform
             And user should be able to see isError equals true in the response and message before 3pm   
         Examples:
             | direccion | numero   | fechaRecogida | nombreEntrega  | apellidosEntrega | celularEntrega    | emailUsuario     | descripcionTipoVia | aplicativo |
-            |   660     |    09    | 2024-10-28    | Southern       |  Gothic          |  3125306919       | sg@gmail.es      | sin descripcion    | envios     | 
+            |   660     |    09    | 2024-11-07   | Southern       |  Gothic          |  3125306919       | sg@gmail.es      | sin descripcion    | envios     | 
 
 
     @regression  @shipping  @characteres
@@ -53,8 +53,8 @@ Feature: Scenarios related to shipping colection REST API in Coordinadora Inform
             And user should be able to see isError equals true in the response characteres required        
         Examples:
             | direccion | numero     | fechaRecogida | nombreEntrega  | apellidosEntrega | celularEntrega    | emailUsuario     | descripcionTipoVia | aplicativo |
-            | 88^&*()$#@| 87         | 2024-11-02    | Southern       | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |
-            | 88        | 87         | 2024-11-02^&*() | Southern       | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |
+            | 88^&*()$#@| 87         | 2024-11-08    | Southern       | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |
+            | 88        | 87         | 2024-11-08^&*() | Southern       | Gothic           |  3125306919       | sg@gmail.es      | sin descripcion    | envios     |
 
 
            
